@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'GetX App',
+      title: 'UAS Pemrograman Mobile',
       initialRoute: '/',
       getPages: AppRoutes.routes,
       theme: ThemeData(
