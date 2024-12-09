@@ -24,6 +24,19 @@ class CashierController extends GetxController {
     total.value -= produk.harga;
   }
 
+  void updateBarang(Produk produk, String nama, int harga){
+    var index = barang.indexWhere((element) => element.id == produk.id);
+    barang[index] = Produk(
+      id: produk.id,
+      nama: nama,
+      harga: harga,
+    );
+    total.value = 0;
+    for (var element in barang) {
+      total.value += element.harga;
+    }
+  }
+
   void checkout(){
     if (barang.isEmpty){
       Get.snackbar('Error', 'Tidak ada barang yang terjual');

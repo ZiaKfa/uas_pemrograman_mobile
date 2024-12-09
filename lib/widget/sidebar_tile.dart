@@ -7,14 +7,14 @@ class SidebarTile extends StatelessWidget {
   final void Function()? onTap;
   final LoginController? loginController;
 
-  SidebarTile({required this.title, required this.icon, required this.onTap, this.loginController});
+  const SidebarTile({required this.title, required this.icon, required this.onTap, this.loginController});
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 16.0,
           fontFamily: 'Avenir',
           fontWeight: FontWeight.w700,

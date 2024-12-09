@@ -15,10 +15,10 @@ class Sidebar extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.blue,
             ),
-            child: Text("Selamat Datang, ${loginController.username} !", style: TextStyle(color: Colors.white, fontSize: 24)),
+            child: Text("Selamat Datang, ${loginController.username} !", style: const TextStyle(color: Colors.white, fontSize: 24)),
           ),
           SidebarTile(
             title: "Dashboard", 

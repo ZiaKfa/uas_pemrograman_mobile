@@ -29,8 +29,6 @@ class LoginView extends StatelessWidget {
             CustomButton(
               text: 'Login',
               onPressed: () {
-                print(usernameController.text);
-                print(passwordController.text);
                 loginController.login(usernameController.text, passwordController.text);
               },
             ),
